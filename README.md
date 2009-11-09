@@ -1,6 +1,6 @@
 # Python Decorations
 
-Decorations are great! They help you not repeat yourself, abstract functionality, and write simple code. This module makes it easy to write clean, readable, decorations.
+Decorators are great! They help you not repeat yourself, abstract functionality, and write simple code. This module gives you decorators which makes it easy to write clean, readable, decorators, by abstracting away the cruft, and leaving only the important part of the decorators: the decoration.
 
 ## Philosophy
 Decorations themselves have a lot of "cruft" that can be abstracted away. Several attempts have been made at fixing this, the most evolved of which I've found to be [the decorator module](http://pypi.python.org/pypi/decorator/). This project is an evolution on the same abstractions.
@@ -62,7 +62,7 @@ so when when you call bar(5, 6, e=7, f=8), foo will be pre-processed with
     kwargs == {'e': 7, 'f': 8}
     dec_params = None
     dec_kwargs = None
-    
+
 but when you call baz(5, 6, e=7, f=8), foo will pre-process with:
 
     f == bar
@@ -70,5 +70,5 @@ but when you call baz(5, 6, e=7, f=8), foo will pre-process with:
     kwargs == {'e': 7, 'f': 8}
     dec_params = [1, 2]
     dec_kwargs = { 'a': 3, 'b': 4 }
-    
+
 The predecoration is doesn't need to change!
