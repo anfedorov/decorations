@@ -1,6 +1,8 @@
 # Python Decorations
-
 Decorators are great! They help you not repeat yourself, abstract functionality, and write simple code. This module gives you decorators which makes it easy to write clean, readable, decorators, by abstracting away the cruft, and leaving only the important part of the decorators: the decoration.
+
+## Thanks
+Many thanks to Fungo Media ([gamechanger.io](http://gamechanger.io)) for funding the initial development of decorations, and for open sourcing it under the Apache License.
 
 ## Philosophy
 Decorations themselves have a lot of "cruft" that can be abstracted away. Several attempts have been made at fixing this, the most evolved of which I've found to be [the decorator module](http://pypi.python.org/pypi/decorator/). This project is an evolution on the same abstractions.
