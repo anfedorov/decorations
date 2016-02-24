@@ -30,7 +30,7 @@ means that query parameters called some_get_var or other_get_var will be passed 
     
     my_django_view(r, 10, 20)
     
-...will bypass the predecoration, because len(args) == 3 != 1.
+...will bypass the predecoration, because len(args) == 3 != 1. This is useful because it unifies the abstractions of function calls and HTTP requests.
 
 postdecorations work similarly (TODO: postdecoration example).
 
